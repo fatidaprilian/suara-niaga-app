@@ -1,0 +1,45 @@
+# --- GENERAL & OS ---
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# --- FRONTEND (Next.js / Node) ---
+node_modules/
+.next/
+dist/
+out/
+build/
+coverage/
+.npm/
+
+# PENTING: Jangan ignore package-lock.json atau yarn.lock!
+# Kita butuh file itu untuk deployment yang stabil.
+
+# --- BACKEND (Python / FastAPI) ---
+# Wajib ada agar tidak kena penalti Repository Bloat
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment (Sangat Penting: Jangan upload folder venv!)
+venv/
+.venv/
+env/
+.env_backend/
+
+# --- ENVIRONMENT VARIABLES (KEAMANAN FATAL) ---
+# Jangan pernah upload kunci rahasia ke GitHub
+.env
+.env.local
+.env.*.local
+*.env
+
+# --- DATABASE & MEDIA ---
+*.sqlite3
+*.db
+/storage/
+*.mp3
+*.wav
+*.webm
